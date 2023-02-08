@@ -27,6 +27,10 @@ export class CarsController {
     appState.on('cars', _drawCars)
   }
 
+  show(){
+        _drawCars()
+    }
+
   // ✅ READ || GET
   async getCars() {
     try {

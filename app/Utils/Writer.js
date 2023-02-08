@@ -14,6 +14,7 @@ function getElem(id) {
 }
 
 export function setHTML(id, html) {
+  // @ts-ignore
   getElem(id).innerHTML = html
 }
 

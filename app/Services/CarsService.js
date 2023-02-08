@@ -30,10 +30,10 @@ class CarsService {
   async getCars() {
     const response = await sandboxApi.get('/cars')
     // NOTE always log the response data
-    console.log('[get cars]', response.data)
+    // console.log('[get cars]', response.data)
     const newArray = response.data.map(car => new Car(car))
     appState.cars = newArray
-    console.log(appState.cars);
+    // console.log(appState.cars);
   }
 
 }
